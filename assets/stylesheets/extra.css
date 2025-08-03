@@ -1,0 +1,24 @@
+.icon-grey {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Désactivation uniquement des classes d'animation problématiques */
+.scroll-animate,
+*[class*="scroll-animate"] {
+  animation: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
+
+/* Garde les styles responsive normaux */
+@media (max-width: 768px) {
+  .intro-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .stat-item {
+    padding: 1.5rem 1rem;
+  }
+}
